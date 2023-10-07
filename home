@@ -1,0 +1,504 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="H-L Shum">
+  <meta name="description" content="個人網站">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>  
+
+  <title>Personal Website</title>
+
+...
+<p style="font-size: 20px; color:#1F9AFE;">
+<a href="Webpage_FilePath">About this site</a>
+</p>
+...
+  
+  <link rel="stylesheet" href="../Library/lawrenceMicrogrid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+  background-color:#E7E9EB;
+}  
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  margin-right: 80px;
+  padding: 5px;
+}  
+
+  
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+  padding: 90px 10px;
+  transition: 0.4s; 
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0; 
+  z-index: 99;
+}  
+
+
+
+#navbar a {
+  float: left;
+  color: #E7E9EB;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 500px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+  
+h3 {
+  border-top: 10px solid black;
+}
+
+.image {
+  display: block;
+  width: 150%;
+  height: 500%;
+}
+
+.btn {
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+  
+  
+
+.btn {
+  background-color: black;
+  border: none; 
+  color: white;
+  border-radius: 8px; 
+  margin-right: 20px;
+  padding: 12px 16px; 
+  font-size: 30px; 
+  cursor: pointer; 
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: cornflowerblue;
+}
+a:link { text-decoration: none; }
+
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+
+.dropdown-content a:hover {
+  background-color: cornflowerblue;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}  
+  
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}  
+
+.sticky + .content {
+  padding-top: 102px;
+}  
+
+  
+    header {
+      background-color: black;
+    }
+img {
+  border-radius: 50%;
+}
+
+
+  
+#myDIV {
+  height:300px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  display: grid;
+  gap: 10px;
+  background-color: #E7E9EB;
+  padding: 10px;
+}
+#myDIV div {
+  background-color: #E7E9EB;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.item1{
+  text-align: center;
+  position: sticky;
+}
+  
+.item2 {
+text-align: left;
+  
+}
+  
+.item3 {
+  grid-column: auto / span 2;
+  border-left: double; 
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  font-family : Apple Chancery, serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-family : Papyrus ;
+}
+
+h4{
+font-size: 14px;
+font-family : Courier, Monospace;
+}  
+
+p {
+  font-size: 20px;
+}
+ 
+  
+a:hover {
+  color: #4682B4;
+  background-color: transparent;
+  text-decoration: underline;
+
+#myBtn {
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 24px;
+  border: cornflowerblue;
+  outline: noncornflowerbluee;
+  background-color: cornflowerblue;
+  color: cornflowerblue;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 24px;
+  border: cornflowerblue;
+  outline: noncornflowerbluee;
+  background-color: cornflowerblue;
+  color: cornflowerblue;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+  
+</style>
+</head>
+
+
+<body>
+
+<header>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/6.2.0/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  
+<div id="navbar">
+ <a href="#default" id="logo"><h2 style="color: white;">H-L Shum<i class="material-icons" style="font-size:24px; margin-right: 10px;color:lightblue">cloud</i></a>  
+  <div id="navbar-right">
+    <a class="active" href="#home">Bio</a>
+     <a href="about.html" margin-right: 10px>Side Project</a>
+      </div>
+       </h2>
+        </div>
+         </header>
+
+    <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+
+<div id="myDIV">
+  <div class="item1">
+   <img src="IMG_0980.PNG" 
+     alt=""
+      width="300"; 
+      height= auto;>
+
+  
+  <div class="item2">
+    <p>
+      <h1><strong>Belinda L-H Shum</strong></h1><br>
+      <p>PolyU Artificial Intelligence and Big Data Computing</p>
+      <p>MSc., AIBD <br></p>
+       <p>HKMU Bussiness Intelligence and Analytics</p>
+        <p>B.B.A., Hons <br></p>
+         <p>lhshum at polyu.edu.hk/comp/<br></p>
+          ⚡ Fun fact: I like swimming and playing piano well 🎹 </p>
+              
+
+    
+<p> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <a href="https://www.linkedin.com/in/belinda-shum-235439215/"><button class="btn"><i class="fa fa-linkedin"></i></button></a>
+  
+    <a href="https://github.com/belina-png"><button class="btn"><i class="fa fa-github"></i></button>       </a>
+  
+    <a href="https://medium.com/@lib75min_gree_23_dat  "><button class="btn"><i class="fa fa-medium"></i></button></a>
+  
+  <a href="nlina6602@gmail.com"><button class="btn"><i class="fa fa-envelope"></i></button></a>
+    </p></div>       </div>
+
+
+  <div class="item">
+    <blockquote cite="http://www.presidency.ucsb.edu/ws/?pid=15545">
+      <p align="left">Hello! I'm a recent graduate in <a href="https://www.hkmu.edu.hk/REG/reg_ftae/Programme_Requirements/Prog_req_BBAHBIAJ.pdf"> Business Intelligence and Analytics</a> from <a href="https://www.hkmu.edu.hk/">Hong Kong Metropolitan University(HKMU)</a>. Excitingly, I'm about the embardk on my next jouney as I'll be pursuing a <a href="https://www.polyu.edu.hk/en/comp/study/taught-postgraduate-programme/mscaibd/">Master of Science degree in Artificial Intelligence and Big Data Computing</a> at <a href="https://www.topuniversities.com/universities/hong-kong-polytechnic-university"> The Hong Kong Polytechnic University (PolyU)</a> starting this September. In the upcoming semester, I will be diving into subjects like <a href="https://www.polyu.edu.hk/comp/docdrive/tpg/subject/COMP5543.pdf">AI and Data Computing Progrmming</a>, as well as <a href="https://www.polyu.edu.hk/comp/docdrive/tpg/subject/COMP5355.pdf"> Cyber and Internet Security</a>, which I'm eagerly looking forward to.</p>
+        <p align="left">
+        During my final year at HKMU, I had the opportunity to work on a project that truly captured my heart and imagination. I focused on heart disease indentification using Artificial Neural Networks (ANN) and Decision Tree algorithms. The process of exploring AI's potentialto impact healthcare and improve lives filled me with meaning and exhilaration. My heart raced with excitement as I delved into the complexities of AI-driven solutions for medical challenges.</p>
+            <p align="left">
+        Last summer, I had the incredible opportunity to intern at <a href="https://home.kuehne-nagel.com/"> 
+      Kuehne+Nagel</a> as a <a href=" https://home.kuehne-nagel.com/-/services/digital- 
+       solutions/data-integration" >data solution specialist</a> in System & Processing Department, which allowed me to develop valuable skills and insights in the fieldof data analysis.
+        Additionally, I have practical experience in the fintech industry, having worked as an Associate Business and System and Analyst Intern at <a href="https://www.linkedin.com/company/promex-trading/?originalSubdomain=hk"> ProMEX </a>, a carbon credit fintech startup located at Hong Kong Cyberport.</p>
+                <p align="left">
+                  Beyond my academic pursuits, my long-term goal is tojoin the AI revolution after completing the 18-month HKT Graduates program. I'm excited to contribute my expertise to the cutting-edge advancements in AI and data computing. Looking further ahead, I have a strong desire to pursue a Ph.D. in the field of AI, aiming to begin my doctoral studies in 2027/28. I'm eager to engage in research and make significant contributions to the ever-evolving landscape of artificial intelligence. </p></blockquote></div>
+
+        
+        
+        
+  <div class="item3">      
+  <p align="left">
+    My <a href="Resume_ii.pdf">CV [PDF]</a>, last updated Feb 2023. 
+      </p><div>      
+
+  <div class="row">
+      <div class="column">
+       <img src="1590398589279.jpg" alt="HKT" width="70" height="70"><br>
+         <h4><font size="-1"><strong>HKT</strong> <br>
+            Graduate Programme, Digital Venture<br>
+             Jul.23 - Expected Jan.25<br></font></h4>
+               </div>
+    
+    <div class="column">
+       <img src="PolyU.svg.png" alt="PolyU" width="70" height="70"><br>
+         <h4><font size="-1"><strong>PolyU</strong> <br>
+            Master of Science Degree in AI & Data Computing<br>
+             Jul.23 - Expected Oct.25<br></font></h4>
+               </div></div>
+        
+
+
+      <div class="row">
+       <div class="column">
+         <img src="images.jpeg" alt="ProMEX" width="70" height="70"><br>
+           <h4><font size="-1"><strong>ProMEX</strong> <br>
+            Associate Business & System Analytsis Intern<br>
+             Feb.23 - Jun.23<br></font></h4>
+               </div>
+
+        <div class="column">
+          <img src="unnamed (1).png" alt="K+N" width="70" height="70"><br>  
+               <h4><font size="-1"><strong>Kuehne+Nagel</strong><br>
+                  Data Solution Intern<br>
+                    Jun.22 - Jul.22<br></font></h4>
+                      </div>
+
+
+ 
+   <div class="column">
+     <img src="download.jpeg" alt="K" width="70" height="70"><br>  
+       <h4><font size="-1"><strong>Kornit Digital</strong><br>
+         Business Intelligence intern<br>
+           May.22 - May.22<br></font></h4>
+             </div>
+
+
+  <div class="column">
+    <img src="unnamed.png" alt="HKMU" width="70" height="70"><br>
+      <h4><font size="-1"><strong>HKMU</strong> <br>
+        Bachelor Hons BIA<br>
+         Sept.21 - Expected May.23<br></font></h4>
+           </div></div></div>
+
+   <div class="row">
+     <div class="column">
+       <img src="download.png" alt="Cenus" width="70" height="70"><br>  
+         <h4><font size="-1" Monospace><strong>Census and Statistics Department</strong><br>
+            Enumerator<br>
+             Jun.21 - Aug.21<br></font></h4>
+               </div>
+ 
+    <div class="column">
+      <img src="1200px-PolyU_HKCC.svg.png" alt="HKCC" width="70" height="70"><br>  
+        <h4><font size="-1"><strong>PolyU HKCC</strong><br>
+          A.D acct<br>
+           Sept.19 - Jul.21<br></font></h4>
+            </div></div></div></p></blockquote></div></div>
+<div class="column">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></div>
+
+  
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {
+    scrollFunction();
+    showButton();
+    myFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("navbar").style.padding = "20px 10px";
+      document.getElementById("logo").style.fontSize = "10px";
+    } else {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "20px";
+    }
+  }
+
+  function showButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function myFunction() {
+    var item1 = document.querySelector(".item1");
+    var sticky = item1.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+      item1.classList.add("sticky");
+    } else {
+      item1.classList.remove("sticky");
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+</script>
+</body>
+</html>
+
+
+
